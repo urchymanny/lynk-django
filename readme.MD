@@ -1,5 +1,7 @@
 # Lynk - A Social Media Link Aggregator
 
+"BEST TO READ .MD files in a .MD viewer like Typora or View same file but better on [Github](https://github.com/urchymanny/wtaa_app/blob/main/readme.MD)
+
 This project - web app - makes it possible for users to create a quick portfolio page that can quickly describe them and point their readers to all their other social media accounts and website that connect to them all over the internet.
 
 ## ![public_show](./screenshots/public_show.png)
@@ -156,6 +158,20 @@ This made it easy to manage the web application design as most components style 
 ### Screenshots
 
 Screenshots can be found in `screenshots` folder on the root directory of the project
+
+- Editing Your Profile
+
+![editing_profile](./screenshots/editing_profile.png)
+
+- First Time Logging in
+
+![editing_profile](./screenshots/new_profile.png)
+
+- Sign Up Page
+
+![editing_profile](./screenshots/signup.png)
+
+
 
 ## Running the Application
 
