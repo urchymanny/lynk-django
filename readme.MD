@@ -51,7 +51,7 @@ Though there are three different element types, they all share the same table on
 for the views, I think it's better to take a quick look at the urls.py file, which is connected to the view functions in the project. 
 
 ``` python
-....
+.... views.py
 
 urlpatterns = [
     # loading the app would lead you straight to the signup page
@@ -130,3 +130,43 @@ and for Youtube, I asked for only the video URL
 ### Ajax
 
 Ajax was used in deleting an element from the user's profile page, sending a request, and performing another action with the response that came from the server
+
+### CSS
+
+for the CSS code on this application, I broke them down into different files and then imported them into the main.css file.
+
+``` css
+.... main.css
+
+@import "navbar.css";
+@import "cards.css";
+@import "inputs.css";
+@import "auth.css";
+@import "profile.css";
+```
+
+This made it easy to manage the web application design as most components style was grouped into a category
+
+## Running the Application
+
+To run this application, you need to run the following code from the project directory
+
+```	shell
+cd path/to/project
+pip install -r requirements.txt
+```
+
+This would install the requirements needed to run the project
+
+
+Then thing to do would be migrating the models to a database on your PC. This must be done from the folder where the manage.py is, in this case, it is in the root folder of the project
+
+``` shell
+python manage.py migrate
+```
+
+Lastly, Start a server
+```shell
+python manage.py runserver
+```
+
