@@ -1,0 +1,16 @@
+{% extends "lynk/ui/layout.html" %}
+{% block title %}
+Welcome to Lynkit
+{%endblock%}
+
+{% block content %}
+{% if user_list %}
+<ul>
+  {% for user in user_list %}
+  <li><a href="{% url 'profile' user.id %}">{{ user.first_name }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No users are available.</p>
+{% endif %}
+{% endblock %}

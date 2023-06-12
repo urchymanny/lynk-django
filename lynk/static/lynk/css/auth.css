@@ -1,0 +1,164 @@
+.signup,
+.edit-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+}
+.signup img {
+  width: 110px;
+  height: 128px;
+  margin-bottom: 14px;
+}
+.signup .heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #042f24;
+  max-width: 482px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 14px;
+}
+.signup .heading span {
+  color: #10ac84;
+}
+.signup .text {
+  max-width: 404px;
+  color: #000;
+  margin-bottom: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.signup-card,
+.edit-profile-card {
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 422px) {
+  .signup .text {
+    margin-top: 3rem;
+  }
+}
+.signup form,
+.edit-profile form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+
+.signup form .terms {
+  display: flex;
+  gap: 6px;
+}
+.signup form .terms span {
+  color: rgba(0, 0, 0, 0.5);
+}
+.signup form .terms p {
+  display: flex;
+  gap: 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  flex-wrap: wrap;
+  padding-top: 0.2rem;
+}
+.signup form .terms p span {
+  color: #10ac84;
+}
+
+.signup form .link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #10ac84;
+  text-align: center;
+  font-family: "U8";
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .signup img {
+    width: 90px;
+    height: 100px;
+  }
+  .signup .heading {
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
+    color: #042f24;
+    max-width: 482px;
+    text-align: center;
+    min-height: 144px;
+    margin-bottom: 14px;
+    height: 100%;
+    width: 100%;
+  }
+  .signup .heading span {
+    color: #10ac84;
+  }
+  .signup .text {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.edit-profile .form-header {
+  width: 100%;
+  font-family: "U8";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: center;
+}
+
+.edit-profile .form-header .back-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: rgba(16, 172, 132, 0.1);
+  border-radius: 20px;
+}
+
+.edit-profile .form-header .back-button .back-button-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.edit-profile .form-header .back-button .back-button-inner img {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+
+.edit-profile .form-section {
+  font-family: "U8";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+}

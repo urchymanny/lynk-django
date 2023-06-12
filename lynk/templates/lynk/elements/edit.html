@@ -1,0 +1,58 @@
+{% extends "lynk/ui/profile.html" %}
+{% block title %}Update Element {% endblock %}
+
+{% block content %}
+{% load static%}
+<div class="card edit-profile-card">
+  <div class="edit-profile">
+    <div class="form-header">
+      <div class="back-button">
+        <a href="{% url 'profile' user_id=user.id %}">
+          <div class="back-button-inner">
+            <img src="{% static "lynk/images/icons/back.svg"%}" alt="">
+          </div>
+        </a>
+      </div>
+      <span class="header-title">Update Element</span>
+    </div>
+
+    {{ error_message }}
+    <form action="{% url 'update_element' element_id=element.id user_id=user.id %}" method="post">
+      {% csrf_token %}
+      <div class="form-explainer">
+        Select an element to create a new section on your page. Add your content heading, text, images, videos and links
+        then save when you’re done.
+      </div>
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.item_type.id_for_label }} label">Select Element Type</label>
+            <select id="id_item_type">
+              {%if element.item_type == "text" %}
+              <option value="text">Text Element</option>
+              {% elif element.item_type == "link" %}
+              <option value="link">Website Link</option>
+              {% elif element.item_type == "youtube" %}
+              <option value="youtube">Youtube Video</option>
+              {% endif %}
+            </select>
+            {{ form.item_type }}
+          </div>
+        </div>
+      </div>
+      {%if element.item_type == "text" %}
+      {% include './text-form.html' with form=form %}
+      {% elif element.item_type == "link" %}
+      {% include './web-form.html' with form=form %}
+      {% elif element.item_type == "youtube" %}
+      {% include './yt-form.html' with form=form %}
+      {% endif %}
+
+      <script src="{% static "lynk/js/edit-element.js" %}"></script>
+
+      <input type="submit" class="signup_btn" value="Update Element" />
+    </form>
+  </div>
+
+</div>
+{%endblock%}

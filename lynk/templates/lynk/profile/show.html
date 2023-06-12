@@ -1,0 +1,64 @@
+{% extends "lynk/ui/profile.html" %}
+{% block title %} {{ user.first_name }} personal dashboard {% endblock %}
+
+{% block content %}
+{% load static%}
+<div class="card profile">
+  <div class="profile-image">
+    <img src="{{user.image}}" alt="">
+  </div>
+  <div class="profile-bio">
+    <span class="username">@{{user.username}}</span>
+    <span class="fullname">{{user.first_name}} {{user.last_name}}</span>
+    <span class="bio">{{user.bio}}</span>
+  </div>
+
+  <div class="social-accounts">
+    <ul>
+      {% include "./social-accounts.html" with account_type='tiktok' url=user.tiktok %}
+
+      {% include "./social-accounts.html" with account_type='instagram' url=user.instagram %}
+
+      {% include "./social-accounts.html" with account_type='twitter' url=user.twitter %}
+
+      {% include "./social-accounts.html" with account_type='linkedin' url=user.linkedin %}
+      <li class="account-btn edit">
+        <a href="{% url 'edit_profile' user_id=user.id %}">
+          <img src="{% static "lynk/images/Icons/edit.svg" %}" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  {% comment %} JQUERY IMPORT {% endcomment %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <div class="elements">
+    {% for element in elements %}
+
+    {% if element.item_type == "text" %}
+    {% include "lynk/profile/text-element.html" with element=element user=user %}
+    {% elif element.item_type == "youtube" %}
+    {% include "lynk/profile/youtube-element.html" with element=element user=user %}
+    {% elif element.item_type == "link" %}
+    {% include "lynk/profile/website-element.html" with element=element user=user %}
+    {% endif %}
+
+
+    {% endfor %}
+    <div class="element-adder" id="adder" onclick="window.location.href='{% url 'add_element' user_id=user.id %}'">
+      <div class=" adder-content">
+        <div class="adder-icon">
+          <img src="{% static "lynk/images/Icons/plus.svg" %}" alt="">
+        </div>
+        <div class="adder-text">
+          <span>Add link, text, video or image</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div>
+{%endblock%}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'lynk/css/fonts.css' %}">
+  <link rel="stylesheet" href="{% static 'lynk/css/main.css' %}">
+  <meta name="viewport" content="initial-scale=1" />
+
+</head>
+
+<body>
+  <div class="nav_container">
+    <div class="navbar">
+      <div class="logo_container">
+        <img class="logo" src="{% static 'lynk/images/logo/logo.png' %}" alt="logo" />
+      </div>
+
+      <div class="right">
+        <div class="auth_buttons">
+          <span class="login_btn"> Log in </span>
+          <span class="signup_btn"> Sign up for free </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% block content %}
+  {% endblock %}
+</body>
+
+</html>

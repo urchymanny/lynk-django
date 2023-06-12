@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'lynk/css/fonts.css' %}">
+  <link rel="stylesheet" href="{% static 'lynk/css/main.css' %}">
+  <meta name="viewport" content="initial-scale=1" />
+
+</head>
+
+<body>
+
+  {% block content %}
+  {% endblock %}
+</body>
+
+</html>

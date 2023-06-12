@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-BlackSlanted.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* 700 */
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-Bold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-BoldSlanted.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* 600 */
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-ExtraBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-ExtraBoldSlanted.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* 500 */
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-SemiBoldSlanted.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* 400 */
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-MediumSlanted.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* 300 */
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-Slanted.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* 200 */
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-LightSlanted.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-ExtraLightSlanted.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* 100 */
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("../typeface/TomatoGrotesk-ThinSlanted.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* ----- U8 Font ----- */
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-Black.otf") format("opentype");
+  font-weight: black;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-BlackItalic.otf") format("opentype");
+  font-weight: black;
+  font-style: italic;
+}
+
+/* 700 */
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-BoldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* 600 */
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* 600 */
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-Thin.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-ThinItalic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-Hairline.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "U8";
+  src: url("../typeface/U8-HairlineItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");

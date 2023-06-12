@@ -14,8 +14,6 @@ This project - web app - makes it possible for users to create a quick portfolio
 - Python
 - SQlite3
 
-[a relative link](/screenshots/public_show.png)
-
 ## Architecture
 
 To develop this project, I created a django project titled "wtaa_app" and added the `lynk` project as a subfolder in the root directory

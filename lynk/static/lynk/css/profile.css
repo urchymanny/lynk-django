@@ -1,0 +1,219 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.public {
+  margin: 40px auto;
+  gap: 40px !important;
+}
+.public-el {
+  gap: 40px !important;
+}
+.profile-image {
+  width: 150px !important;
+  height: 150px;
+  margin: 0px auto;
+  border-radius: 75px;
+  overflow: hidden;
+}
+.profile-image img {
+  max-width: 150px;
+}
+
+.profile-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-bio .fullname {
+  font-size: 24px;
+  font-weight: 600;
+}
+.profile .social-accounts {
+  width: 100%;
+}
+.profile .social-accounts ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  margin: 0px auto !important;
+  padding: 0 !important;
+  padding-inline-start: 0 !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile .social-accounts ul li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.profile .social-accounts ul li a {
+  width: 50px;
+  height: 50px;
+  background: rgba(16, 172, 132, 0.05);
+  display: block;
+  position: relative;
+  border-radius: 25px;
+}
+.profile .social-accounts ul li a img,
+.el-type-actions .el-actions .el-action-btn a img {
+  width: 24px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.profile .social-accounts ul li a img {
+  mix-blend-mode: luminosity;
+}
+
+.profile .social-accounts ul li a img.available-link {
+  mix-blend-mode: normal !important;
+}
+
+.profile .social-accounts ul li.edit a,
+.el-type-actions .el-actions .el-action-btn a {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+  margin: 5px auto;
+}
+
+.profile .social-accounts ul li.edit a img,
+.el-type-actions .el-actions .el-action-btn a img {
+  width: 16px !important;
+}
+/* ELEMENTS */
+
+.elements {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.element-adder {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 1px dashed rgba(4, 47, 36, 0.2);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 60px 0px;
+}
+
+.element-adder:hover {
+  background: rgba(16, 172, 132, 0.05);
+  cursor: pointer;
+}
+.element-adder .adder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.element-adder .adder-content .adder-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(4, 47, 36, 0.05);
+  border-radius: 30px;
+  position: relative;
+}
+.element-adder .adder-content .adder-icon img {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.elements .element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+  background: #ffffff;
+  border: 1px dashed rgba(4, 47, 36, 0.2);
+  border-radius: 16px;
+}
+
+.elements .show {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px !important;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+  background: #ffffff;
+  border: 0 !important;
+  border-radius: 16px;
+}
+.element .el-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.element .el-text-body {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.element .el-youtube-video {
+  width: 100%;
+}
+
+.element .el-link-holder,
+.element.el-website a .el-link-holder {
+  background: rgba(16, 172, 132, 0.05);
+  border: 1px solid rgba(16, 172, 132, 0.15);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.element.el-website a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #10ac84;
+}
+
+.el-type-actions {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(4, 47, 36, 0.5);
+  width: 100%;
+  align-items: center;
+}
+.el-type-actions .el-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.el-type-actions .el-actions .el-action-btn a {
+  display: block;
+  position: relative;
+  border-radius: 20px;
+}

@@ -1,0 +1,45 @@
+{% extends "lynk/ui/profile.html" %}
+{% block title %}Add New Element {% endblock %}
+
+{% block content %}
+{% load static%}
+<div class="card edit-profile-card">
+  <div class="edit-profile">
+    <div class="form-header">
+      <div class="back-button">
+        <a href="{% url 'profile' user_id=user.id %}">
+          <div class="back-button-inner">
+            <img src="{% static "lynk/images/icons/back.svg"%}" alt="">
+          </div>
+        </a>
+      </div>
+      <span class="header-title">Add Element</span>
+    </div>
+
+    {{ error_message }}
+    <form action="{% url 'create_element' user_id=user.id %}" method="post">
+      {% csrf_token %}
+      <div class="form-explainer">
+        Select an element to create a new section on your page. Add your content heading, text, images, videos and links
+        then save when you’re done.
+      </div>
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.item_type.id_for_label }} label">Select Element Type</label>
+            {{ form.item_type }}
+          </div>
+        </div>
+      </div>
+
+      {% include './text-form.html' with form=form %}
+      {% include './web-form.html' with form=form %}
+      {% include './yt-form.html' with form=form %}
+
+      <input type="submit" class="signup_btn" value="Add New Element" />
+    </form>
+  </div>
+
+</div>
+<script src="{% static "lynk/js/new-element.js" %}"></script>
+{%endblock%}

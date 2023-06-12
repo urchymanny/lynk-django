@@ -1,0 +1,23 @@
+@import "navbar.css";
+@import "cards.css";
+@import "inputs.css";
+@import "auth.css";
+@import "profile.css";
+
+body {
+  background-image: url(../images/backgound.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 1728px;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  font-family: TomatoGrotesk;
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    background-image: none;
+    background: #ffffff;
+  }
+}

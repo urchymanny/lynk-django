@@ -1,0 +1,300 @@
+.field,
+.text-el-form .field,
+.web-el-form .field,
+.yt-el-form .field {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  /* border: 1px solid rgba(4, 47, 36, 0.2); */
+  border-radius: 8px;
+  background: transparent;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+.field.span_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 8px;
+  width: 100%;
+}
+.field.span_container.hidden {
+  display: none;
+}
+.field.span_container.placeholder {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(4, 47, 36, 0.5);
+}
+.field.span_container input {
+  border: none;
+  outline: none;
+  height: 17px;
+  width: 90%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #042f24;
+  flex: none;
+  order: 1;
+  border: 1px;
+}
+.field.span_container.extra {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  grid-template-columns: 0.5fr 6fr;
+  align-items: center;
+}
+.field.span_container.extra p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #042f24 75;
+  padding: 0;
+  margin: 0;
+}
+.field.span_container.extra p {
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #042f24 75;
+  padding: 0;
+  padding-right: 0.5rem;
+  margin: 0;
+}
+.field.span_container.extra.url_user {
+  border: none;
+  outline: none;
+  height: 17px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #042f24;
+  order: 1;
+  flex-grow: 0;
+}
+.field.span_container textarea {
+  width: 100%;
+  height: 51px;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #042f24;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.field.span_container.dropdown {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.field.span_container.dropdown.block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.field.span_container.dropdown.block.value {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  width: 100%;
+  color: #042f24;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.field.span_container.dropdown.block img {
+  width: 9px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.field.span_container.dropdown.hidden {
+  display: none;
+}
+.field.span_container.dropdown.options {
+  position: absolute;
+  top: 60px;
+  background: #fafafa;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  flex-direction: column;
+  padding: 12px;
+  max-width: 550px;
+}
+.field.span_container.dropdown.options span {
+  background: white;
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 16px;
+  width: 100%;
+  border-radius: 8px;
+  z-index: 111;
+}
+.field_ {
+  height: 100%;
+  min-height: 94px;
+  display: block;
+  padding: 5px 9px;
+  padding-top: 10px;
+}
+
+.field__ {
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  /* max-width: 500px; */
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+.field__ .input_box {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.field__ .input_box .label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px 22px;
+  box-sizing: border-box;
+}
+.field__ .input_box input,
+.field__ .input_box textarea,
+.field__ .input_box select {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 10px 22px;
+  box-sizing: border-box;
+}
+.field__ .child {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 17px;
+}
+
+form .signup_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 16px 20px;
+  background: #10ac84;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 12px auto;
+  width: 258px;
+  height: 53px;
+  font-family: "U8";
+  border: none;
+}
+
+.text-el-form,
+.web-el-form,
+.yt-el-form {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.field__ .input_box textarea {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 24px 22px 10px;
+  box-sizing: border-box;
+  font-family: "U8";
+}
+
+.field.text-field {
+  height: 200px !important;
+}
+
+.field.text-field .field__ {
+  height: 100% !important;
+}
+
+.card .errorlist {
+  width: 100% !important;
+}
+
+.card .errorlist {
+  list-style-type: none;
+  padding: 10px 0 0;
+  margin: 10px 0 0;
+}
+.card .errorlist li {
+  color: red;
+  font-weight: bold;
+}
+.card .errorlist li ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0 !important;
+}
+.card .errorlist li ul li {
+  padding: 10px;
+  background-color: rgb(255, 218, 218);
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: normal;
+  color: black;
+  border: 1px solid rgb(255, 170, 170);
+}

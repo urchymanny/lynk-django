@@ -1,0 +1,43 @@
+{% load static %}
+<div class="element el-website">
+  <div class="el-link-holder">
+    <span class="el-link-title">{{element.web_link_header}}</span>
+    <span class="el-link-icon"><img src="{% static "lynk/images/Icons/link.svg"%}" alt=""></span>
+  </div>
+  <div class="el-type-actions">
+    <div class="el-type">
+      <span>Youtube Video</span>
+    </div>
+    <div class="el-actions">
+      <div class="el-action-btn">
+        <a href="{% url "edit_element" element_id=element.id user_id=user.id %}">
+          <img src="{% static "lynk/images/Icons/edit.svg" %}" alt="">
+        </a>
+      </div>
+      <div class="el-action-btn" onclick="deleteElement()">
+        <a>
+          <img src="{% static "lynk/images/Icons/delete.svg" %}" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--AJAX SCRIPT-->
+<script>
+  function deleteElement() {
+    $.ajax({
+      url: "{% url 'delete_element' element_id=element.id user_id=user.id %}",
+      type: 'POST',
+      data: {},
+      success: function (response) {
+        console.log(response);
+        window.location.href = "{% url 'profile' user_id=user.id %}";
+      },
+      error: function (xhr, errmsg, err) {
+        console.log(xhr.status + ': ' + xhr.responseText);
+      }
+    });
+  }
+</script>

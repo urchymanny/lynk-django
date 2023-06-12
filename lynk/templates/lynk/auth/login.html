@@ -1,0 +1,35 @@
+{% extends "lynk/ui/layout.html" %}
+{% block title %} Login to your Lynkit {% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="card signup-card">
+  <div class="signup">
+    <span class="heading"> Get back into your <br /><span> Lynk</span> account </span>
+    <form action="{% url 'login_user' %}" method="post">
+      {% csrf_token %}
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.username.id_for_label }} label">Username</label>
+            {{ form.username }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <span class="{{ form.password.id_for_label }} label">Password</span>
+            {{ form.password }}
+          </div>
+        </div>
+      </div>
+
+      <input type="submit" class="signup_btn" value="Login" />
+      <a class="link" href="{% url 'signup' %}"> Don't have an account?</a>
+    </form>
+  </div>
+
+</div>
+{% endblock %}

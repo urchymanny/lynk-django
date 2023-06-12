@@ -1,0 +1,137 @@
+{% extends "lynk/ui/profile.html" %}
+{% block title %}Editing your profile {% endblock %}
+
+{% block content %}
+{% load static%}
+<div class="card edit-profile-card">
+  <div class="edit-profile">
+    <div class="form-header">
+      <div class="back-button">
+        <a href="{% url 'profile' user_id=user.id %}">
+          <div class="back-button-inner">
+            <img src="{% static "lynk/images/icons/back.svg"%}" alt="">
+          </div>
+        </a>
+      </div>
+      <span class="header-title">Editing Profile</span>
+    </div>
+
+    {{ error_message }}
+    <form action="{% url 'update_user' user_id=user.id %}" method="post">
+      {% csrf_token %}
+      <div class="form-section">
+        Personal Details
+      </div>
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.first_name.id_for_label }} label">First Name</label>
+            {{ form.first_name }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.last_name.id_for_label }} label">Last Name</label>
+            {{ form.last_name }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.bio.id_for_label }} label">Tell us about you in one line</label>
+            {{ form.bio }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.image.id_for_label }} label">Image Url</label>
+            {{ form.image }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.username.id_for_label }} label">Username</label>
+            {{ form.username }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.email.id_for_label }} label">Email Address</label>
+            {{ form.email }}
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        Social Media Accounts
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.tiktok.id_for_label }} label">Your Tiktok Profile URL</label>
+            {{ form.tiktok }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.instagram.id_for_label }} label">Your Instagram Profile URL</label>
+            {{ form.instagram }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.twitter.id_for_label }} label">Your Twitter Profile URL</label>
+            {{ form.twitter }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.linkedin.id_for_label }} label">Your LinkedIn Profile URL</label>
+            {{ form.linkedin }}
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        Account Security
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <span class="{{ form.password.id_for_label }} label">Password</span>
+            {{ form.password }}
+          </div>
+        </div>
+      </div>
+
+      <input type="submit" class="signup_btn" value="Update Profile" />
+    </form>
+  </div>
+
+</div>
+{%endblock%}

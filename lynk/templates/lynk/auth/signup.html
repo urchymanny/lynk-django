@@ -1,0 +1,86 @@
+{% extends "lynk/ui/layout.html" %}
+{% block title %} Signup to Lynkit {% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div class="card signup-card">
+  <div class="signup">
+    {% comment %} <img src="{% static 'lynk/images/rocket.png' %}" alt="celeberation" /> {% endcomment %}
+    <span class="heading"> Create a <span> Lynk</span> <br /> account for free </span>
+    {% comment %} <span class="text">
+      Let’s help you set up a pro page for free that showcases you & your business
+    </span> {% endcomment %}
+    {{ error_message }}
+    <form action="{% url 'create_user' %}" method="post">
+      {% csrf_token %}
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.first_name.id_for_label }} label">First Name</label>
+            {{ form.first_name }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.last_name.id_for_label }} label">Last Name</label>
+            {{ form.last_name }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.bio.id_for_label }} label">Tell us about you in one line</label>
+            {{ form.bio }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.image.id_for_label }} label">Image Url</label>
+            {{ form.image }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.username.id_for_label }} label">Username</label>
+            {{ form.username }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <label class="{{ form.email.id_for_label }} label">Email Address</label>
+            {{ form.email }}
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field__">
+          <div class="input_box">
+            <span class="{{ form.password.id_for_label }} label">Password</span>
+            {{ form.password }}
+          </div>
+        </div>
+      </div>
+
+      <input type="submit" class="signup_btn" value="Signup" />
+      <a class="link" href="{% url 'login' %}"> Already have an account?</a>
+    </form>
+  </div>
+
+</div>
+{% endblock %}

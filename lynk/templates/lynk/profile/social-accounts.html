@@ -1,0 +1,9 @@
+{%load static%}
+
+
+<li class="account-btn">
+  <a href="{{ url }}">
+    <img class="{% if url %}available-link{% endif %}" src="{% static "lynk/images/Icons/" %}{{ account_type }}.svg"
+      alt="">
+  </a>
+</li>
