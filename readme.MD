@@ -2,6 +2,8 @@
 
 This project - web app - makes it possible for users to create a quick portfolio page that can quickly describe them and point their readers to all their other social media accounts and website that connect to them all over the internet.
 
+## ![public_show](./screenshots/public_show.png)
+
 ## Stack used in this project
 
 - Html
@@ -11,6 +13,8 @@ This project - web app - makes it possible for users to create a quick portfolio
 - Django
 - Python
 - SQlite3
+
+[a relative link](/screenshots/public_show.png)
 
 ## Architecture
 
@@ -146,6 +150,14 @@ for the CSS code on this application, I broke them down into different files and
 ```
 
 This made it easy to manage the web application design as most components style was grouped into a category
+
+#### ALL PAGES ARE RESPONSIVE
+
+
+
+### Screenshots
+
+Screenshots can be found in `screenshots` folder on the root directory of the project
 
 ## Running the Application
 
